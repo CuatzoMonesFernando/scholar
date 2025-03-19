@@ -1,0 +1,8 @@
+{
+  "name": "scholar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "be30a9f5"
+}
