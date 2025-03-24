@@ -1,8 +1,7 @@
 {
-  "name": "scholar",
+  "name": "school",
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular",
-  "id": "be30a9f5"
+  "type": "angular-standalone"
 }

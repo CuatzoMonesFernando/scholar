@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true" class="login-bg">
+  <div class="login-container">
+    <img src="assets/icon/Higeo-letra-blanco.png" alt="Logo" class="logo" />
+    <h2 class="titulo">Bienvenido</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+      <!-- Campo Email -->
+      <ion-item class="input-item" lines="none">
+        <ion-icon name="person-circle" slot="start"></ion-icon>
+        <ion-input
+          placeholder="Usuario"
+          formControlName="email"
+          type="email">
+        </ion-input>
+      </ion-item>
+
+      <!-- Campo Password -->
+      <ion-item class="input-item" lines="none">
+        <ion-icon name="lock-closed" slot="start"></ion-icon>
+        <ion-input
+          placeholder="Contraseña"
+          formControlName="password"
+          type="password">
+        </ion-input>
+      </ion-item>
+
+      <!-- Botón -->
+      <ion-button
+        expand="block"
+        class="login-btn"
+        type="submit"
+        [disabled]="loginForm.invalid">
+        Ingresar
+      </ion-button>
+
+      <p class="aviso">¿Olvidaste tu contraseña?</p>
+    </form>
+  </div>
+</ion-content>

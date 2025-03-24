@@ -1,0 +1,26 @@
+ion-menu {
+  --background: #1a1c2c;
+  color: white;
+
+  .menu-list {
+    ion-item {
+      --color: #0c0b0b;
+      font-size: 15px;
+      border-radius: 8px;
+      margin: 4px 12px;
+
+      &.active {
+        background-color: #00a7e1;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .menu-footer {
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+  }
+}
